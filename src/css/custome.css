@@ -193,10 +193,15 @@ section.login-sec {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
 }
+.login-form-box .button-group a.active,
+.login-form-box .button-group a:hover{color:var(--dark-black)}
+.login-form-box .button-group a.active{text-decoration: underline;}
 .login-form-box form{margin-top:40px; margin-bottom: 0px;}
+.register-form,
+.regiser-h{display:none;}
 
 /*-----------------------------------------------------------
                 home css start here
@@ -497,7 +502,7 @@ body.vodafone-color .notification-box > ul > li > a > samp{background: #EE3023;}
         width: 100%;
         background: var(--white);
         border-right: 1px solid rgba(0,0,0,0.1);
-        height: calc(100vh - 100px);
+        height: calc(100vh - 155px);
         transition: all 0.5s;
     }
     .main-wrapper.sidebar-open .left-sidebar {
@@ -765,6 +770,10 @@ span.gray {
     box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
     padding: 5px;
 }
+.map-sec-full {
+    min-height: calc(100vh - 155px);
+}
+.map-sec-full iframe{height: 100%;}
 /*-----------------------------------------------------------
                 assignment page css start here
 ---------------------------------------------------------*/
@@ -1013,6 +1022,31 @@ footer .box:last-child{text-align: right;}
         width: calc(100% - 330px );
     }
 
+}
+@media all and (max-width:1440px){
+    .site-status-box, .site-app-box{
+        padding: 20px 15px;
+    }
+    .site-app-box .icon-box .icon > a{
+        width:55px;
+        height: 55px;
+    }
+    .banner{
+        min-height: 284px;
+    }
+    section.login-sec {
+        margin-top: -70px;
+        padding-bottom: 55px;
+        min-height: calc(100vh - 269px);
+    }
+    .login-form-box{
+        padding: 31px 30px; 
+    }
+}
+@media all and (max-width:1280px){
+    .login-form-box form {
+        margin-top: 38px;
+    }
 }
 @media all and (min-width:768px){
     .mobile{display: none;}
