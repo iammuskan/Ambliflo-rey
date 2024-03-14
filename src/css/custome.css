@@ -773,7 +773,8 @@ span.gray {
 .map-sec-full {
     min-height: calc(100vh - 155px);
 }
-.map-sec-full iframe{height: 100%;}
+.map-sec-full iframe{height: 100%;    position: relative;
+    z-index: 0;}
 /*-----------------------------------------------------------
                 assignment page css start here
 ---------------------------------------------------------*/
