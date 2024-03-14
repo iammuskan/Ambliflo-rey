@@ -14,6 +14,26 @@ $(document).ready(function() {
         $( ".dropdown-toggle" ).click(function() {
             $( ".dropdown-menu" ).toggle(300);
         });
+    /*------login page--*/
+    $('.sign-btn').click(function(event){
+        $(this).addClass('active');
+        $('.register-btn').removeClass('active');
+        $('.sign-in-form').show(); 
+        $('.sign-in-h').show(); 
+        $('.regiser-h').hide(); 
+        $('.register-form').hide(); 
+        return false;
+    });
+    $('.register-btn').click(function(event){
+        $(this).addClass('active');
+        $('.sign-btn').removeClass('active');
+        $('.sign-in-form').hide(); 
+        $('.sign-in-h').hide(); 
+        $('.regiser-h').show(); 
+        $('.register-form').show(); 
+        return false;
+    });
+    
     
      /*----right sidebar--*/
      $(".icon-button").click(function(){
@@ -98,5 +118,7 @@ $(document).ready(function() {
         options: options
     });
     /*-----*/
+    
+
     
       }(jQuery));
