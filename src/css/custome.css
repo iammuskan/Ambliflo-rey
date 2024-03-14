@@ -504,6 +504,7 @@ body.vodafone-color .notification-box > ul > li > a > samp{background: #EE3023;}
         border-right: 1px solid rgba(0,0,0,0.1);
         height: calc(100vh - 155px);
         transition: all 0.5s;
+      z-index:3;
     }
     .main-wrapper.sidebar-open .left-sidebar {
         max-width: 120px;
