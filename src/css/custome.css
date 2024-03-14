@@ -1048,6 +1048,22 @@ footer .box:last-child{text-align: right;}
         margin-top: 38px;
     }
 }
+
+@media all and (max-width:1228px){
+    .banner {
+        min-height: 243px;
+    }
+    section.login-sec{
+        min-height: calc(100vh - 298px);
+    }
+    .input {
+        margin-bottom: 15px;
+    }
+    .login-form-box form {
+        margin-top: 28px;
+    }
+}
+
 @media all and (min-width:768px){
     .mobile{display: none;}
     .desktop{display: block;}
