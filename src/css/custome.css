@@ -1017,6 +1017,14 @@ footer .box:last-child{text-align: right;}
 /*-----------------------------------------------------------
                 Resposnive start here
 ---------------------------------------------------------*/
+@media all and (min-width:1600px){
+  section.login-sec {
+    margin-top: -100px;
+    padding-bottom: 100px;
+    position: relative;
+    min-height: calc(100vh - 335px);
+}
+}
 @media all and (max-width:1600px){
     .main-wrapper .left-sidebar{max-width: 330px;}
 
